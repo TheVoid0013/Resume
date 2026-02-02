@@ -1,266 +1,554 @@
 <!DOCTYPE html>
-<html lang='en'>
-
+<html lang="en-US">
 <head>
-    <meta charset='UTF-8'>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Samyam Subedi - Full Stack Developer</title>
-    <style>
-        @page {
-            margin: 0.5in;
-            size: A4;
-        }
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Primary Meta Tags -->
+    <title>Samyam Subedi - Full Stack Developer | .NET Core & React Specialist</title>
+    <meta name="title" content="Samyam Subedi - Full Stack Developer | .NET Core & React Specialist">
+    <meta name="description" content="Full Stack Developer specializing in .NET Core and React with expertise in finance technology. Skilled in building scalable multi-tenant systems, real-time applications, and optimized banking solutions in Kathmandu, Nepal.">
+    <meta name="keywords" content="Full Stack Developer, .NET Core Developer, React Developer, C# Developer, TypeScript, WebSockets, SQL Server, Kathmandu Nepal, Finance Technology Developer, Software Engineer">
+    <meta name="author" content="Samyam Subedi">
+    <meta name="robots" content="index, follow">
 
-        body {
-            font-family: Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            color: #1f2937;
-            margin: 0;
-            padding: 20px;
+    <link rel="icon" type="image/x-icon" href="favicon.ico">   
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://samyamsubedi.netlify.app/">
+    <meta property="og:title" content="Samyam Subedi - Full Stack Developer | .NET Core & React Specialist">
+    <meta property="og:description" content="Full Stack Developer specializing in .NET Core and React with expertise in finance technology. Skilled in building scalable multi-tenant systems, real-time applications, and optimized banking solutions.">
+    <meta property="og:image" content="https://samyamsubedi.netlify.app/images/preview.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://samyamsubedi.netlify.app/">
+    <meta property="twitter:title" content="Samyam Subedi - Full Stack Developer | .NET Core & React Specialist">
+    <meta property="twitter:description" content="Full Stack Developer specializing in .NET Core and React with expertise in finance technology. Skilled in building scalable multi-tenant systems, real-time applications, and optimized banking solutions.">
+    <meta property="twitter:image" content="https://samyamsubedi.netlify.app/images/preview.jpg">
+    
+    <!-- LinkedIn Profile Link -->
+    <link rel="me" href="https://www.linkedin.com/in/samyamsubedi/">
+    
+    <!-- Additional Meta Tags -->
+    <meta name="theme-color" content="#ffffff">
+    <link rel="canonical" href="https://samyamsubedi.netlify.app/">
+    
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/aos.css?ver=1.1.0" rel="stylesheet">
+    <link href="css/bootstrap.min.css?ver=1.1.0" rel="stylesheet">
+    <link href="css/main.css?ver=1.1.0" rel="stylesheet">
+    <noscript>
+      <style type="text/css">
+        [data-aos] {
+            opacity: 1 !important;
+            transform: translate(0) scale(1) !important;
         }
-
-        .header {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-
-        .name {
-            font-size: 32px;
-            font-weight: bold;
-            color: #111827;
-            margin: 0 0 5px 0;
-        }
-
-        .title {
-            font-size: 18px;
-            font-weight: 600;
-            color: #374151;
-            margin: 0 0 15px 0;
-        }
-
-        .contact {
-            font-size: 11px;
-            color: #6b7280;
-        }
-
-        .contact span {
-            margin: 0 8px;
-        }
-
-        .section-header {
-            font-size: 20px;
-            font-weight: bold;
-            color: #111827;
-            border-bottom: 2px solid #2563eb;
-            padding-bottom: 4px;
-            margin-top: 25px;
-            margin-bottom: 15px;
-        }
-
-        .profile-text {
-            font-size: 11px;
-            color: #374151;
-            text-align: justify;
-            line-height: 1.7;
-        }
-
-        .experience-item {
-            margin-bottom: 25px;
-        }
-
-        .experience-header {
-            font-size: 13px;
-            font-weight: bold;
-            color: #111827;
-            margin-bottom: 8px;
-        }
-
-        .subsection-header {
-            font-size: 11px;
-            font-weight: bold;
-            color: #374151;
-            margin: 12px 0 6px 15px;
-        }
-
-        .responsibility {
-            font-size: 10px;
-            color: #4b5563;
-            margin: 4px 0 4px 30px;
-            position: relative;
-            padding-left: 15px;
-        }
-
-        .responsibility:before {
-            content: '•';
-            position: absolute;
-            left: 0;
-            color: #2563eb;
-            font-weight: bold;
-        }
-
-        .skill-category {
-            margin-bottom: 18px;
-        }
-
-        .skill-category-title {
-            font-size: 13px;
-            font-weight: bold;
-            color: #111827;
-            margin-bottom: 8px;
-        }
-
-        .skill-item {
-            font-size: 11px;
-            color: #374151;
-            margin: 3px 0 3px 15px;
-        }
-
-        .skill-label {
-            font-weight: 600;
-        }
-
-        .education-section {
-            font-size: 11px;
-        }
-
-        .education-degree {
-            font-weight: 600;
-            color: #111827;
-        }
-
-        .education-detail {
-            color: #4b5563;
-            margin: 2px 0;
-        }
-
-        .education-status {
-            font-style: italic;
-            color: #6b7280;
-        }
-    </style>
+      </style>
+    </noscript>
 </head>
+  <body id="top">
+    <header>
+      <div class="profile-page sidebar-collapse">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-transparent bg-primary" color-on-scroll="400">
+          <div class="container">
+            <div class="navbar-translate"><a class="navbar-brand" href="#" rel="tooltip">Samyam Subedi</a>
+              <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-bar bar1"></span><span class="navbar-toggler-bar bar2"></span><span class="navbar-toggler-bar bar3"></span></button>
+            </div>
+            <div class="collapse navbar-collapse justify-content-end" id="navigation">
+              <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link smooth-scroll" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link smooth-scroll" href="#skill">Skills</a></li>
+                <!-- <li class="nav-item"><a class="nav-link smooth-scroll" href="#portfolio">Portfolio</a></li> -->
+                <li class="nav-item"><a class="nav-link smooth-scroll" href="#experience">Experience</a></li>
+                <li class="nav-item"><a class="nav-link smooth-scroll" href="#contact">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <div class="page-content">
+      <div>
+<div class="profile-page">
+  <div class="wrapper">
+    <div class="page-header page-header-small" filter-color="green">
+      <div class="page-header-image" data-parallax="true" style="background-image: url('images/cc-bg-1.avif')"></div>
+      <div class="container">
+        <div class="content-center">
+          <div class="cc-profile-image"><a href="#"><img src="images/Samyam.jpg" alt="Image"/></a></div>
+          <div class="h2 title">Samyam Subedi</div>
+          <p class="category text-white">Full Stack Developer</p><a class="btn btn-primary smooth-scroll mr-2" href="#contact" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Hire Me</a>
+          <a
+  class="btn btn-primary"
+  href="assets/cv/Samyam-Subedi-Resume-Full-stack-Developer.pdf"
+  download
+  data-aos="zoom-in"
+>
+  Download CV
+</a>
 
-<body>
-
-    <!-- Header Section -->
-    <div class='header'>
-        <div class='name'>Samyam Subedi</div>
-        <div class='title'>Full stack Developer</div>
-        <div class='contact'>
-            <span>samyam081@gmail.com</span>
-            <span>•</span>
-            <span>+977 9843999347</span>
-            <span>•</span>
-            <span>kathmandu, Nepal</span>
         </div>
-    </div>
-
-    <!-- Profile Section -->
-    <div class='section-header'>Profile</div>
-    <div class='profile-text'>Results-driven Full Stack Developer specializing in .NET Core and React, with hands-on
-        experience in the finance technology sector. Successfully contributed to multi-tenant CMS platforms and
-        real-time banking applications, optimizing SQL performance and implementing robust state management solutions.
-        Skilled in bridging backend and frontend development while maintaining high standards for security, scalability,
-        and user experience.</div>
-
-    <!-- Professional Experience Section -->
-    <div class='section-header'>Professional Experience</div>
-
-    <div class='experience-item'>
-        <div class='experience-header'>Full Stack Developer | Digital Age Nepal (Finance Technology) | July 2025 -
-            Present</div>
-        <div class='subsection-header'>Backend Development (.NET Core)</div>
-        <div class='responsibility'>Architect and maintain .NET Core applications using C# with repository and unit of
-            work patterns, ensuring clean, modular, and testable code architecture across financial systems</div>
-        <div class='responsibility'>Optimize SQL queries and stored procedures for high-volume banking operations,
-            improving database performance and ensuring 99.9% uptime in live production environments</div>
-        <div class='responsibility'>Design and implement multi-tenant architecture for cooperative organizations,
-            enabling secure data isolation and seamless onboarding for 50+ institutional clients</div>
-        <div class='responsibility'>Manage critical financial workflows in production banking databases, maintaining
-            strict compliance with security standards and data accuracy requirements</div>
-        <div class='subsection-header'>Frontend Development (React/TypeScript)</div>
-        <div class='responsibility'>Build real-time, bidirectional communication systems using WebSockets and TypeScript
-            APIs, delivering instant notifications and live data streaming for concurrent users</div>
-        <div class='responsibility'>Integrate WebSocket events with React components using Zustand for state management
-            and TanStack Query for efficient caching, reducing API calls by 60%</div>
-        <div class='responsibility'>Implement type-safe data validation using Zod schemas, eliminating runtime errors
-            and ensuring data integrity across real-time financial transactions</div>
-        <div class='responsibility'>Develop production-grade WebSocket connection handling with automatic reconnection
-            logic and comprehensive error recovery mechanisms</div>
-        <div class='responsibility'>Create responsive UIs with React Hook Form, Tailwind CSS, and Framer Motion,
-            improving user engagement and reducing form submission errors by 35%</div>
-    </div>
-
-    <div class='experience-item'>
-        <div class='experience-header'>Full Stack .NET Developer | Aster Innovations | November 2024 - June 2025</div>
-        <div class='subsection-header'>Responsibilities</div>
-        <div class='responsibility'>Developed scalable .NET applications (C#, .NET Core) with SQL Server, implementing
-            Entity Framework for efficient data access and automated database migrations across 8+ client projects</div>
-        <div class='responsibility'>Designed and built RESTful APIs with comprehensive documentation, enabling seamless
-            integration for React and Blazor front-end applications</div>
-        <div class='responsibility'>Architected multi-tenant CMS platform with role-based access control, content
-            versioning, and multilingual support (EN, NE, NL), serving 20+ organizations</div>
-        <div class='responsibility'>Collaborated with UI/UX teams to implement reusable React and Blazor components,
-            reducing development time by 40% and ensuring consistent user experiences</div>
-        <div class='responsibility'>Applied Agile/Scrum methodologies and Git workflows, conducting peer code reviews
+      </div>
+      <div class="section">
+        <div class="container">
+          <div class="button-container">
+            <a class="btn btn-default btn-round btn-lg btn-icon" href="https://www.linkedin.com/in/samyamsubedi"
+            rel="tooltip" title="Follow me on LinkedIn">
+              <i class="fa fa-linkedin"></i>
+            </a>
+            <a class="btn btn-default btn-round btn-lg btn-icon" href="https://github.com/TheVoid0013"
+            rel="tooltip" title="Follow me on Github">
+              <i class="fa fa-github"></i>
+            </a>
+              <!-- <a class="btn btn-default btn-round btn-lg btn-icon" href="#" rel="tooltip" title="Follow me on Google+">
+                <i class="fa fa-google-plus"></i>
+              </a>
+              <a class="btn btn-default btn-round btn-lg btn-icon" href="#" rel="tooltip" title="Follow me on Instagram">
+                <i class="fa fa-instagram"></i></a>
+              </div> -->
         </div>
-        <div class='responsibility'>Ensured application security and performance through clean coding standards,
-            implementing authentication/authorization with ASP.NET Core Identity</div>
+      </div>
     </div>
-
-    <!-- Skills Section -->
-    <div class='section-header'>Skills</div>
-
-    <div class='skill-category'>
-        <div class='skill-category-title'>Backend Development</div>
-        <div class='skill-item'><span class='skill-label'>Languages:</span> C#, JavaScript, TypeScript, SQL</div>
-        <div class='skill-item'><span class='skill-label'>Frameworks & Technologies:</span> .NET Core, ASP.NET Core,
-            Entity Framework Core, REST API Design</div>
-        <div class='skill-item'><span class='skill-label'>Architecture Patterns:</span> Repository Pattern, Unit of
-            Work, Clean Architecture, Multi-Tenant Systems</div>
-        <div class='skill-item'><span class='skill-label'>Authentication & Security:</span> ASP.NET Core Identity,
-            Role-Based Access Control (RBAC), JWT</div>
-    </div>
-
-    <div class='skill-category'>
-        <div class='skill-category-title'>Frontend Development</div>
-        <div class='skill-item'><span class='skill-label'>Frameworks & Libraries:</span> React (SPA), Blazor, TypeScript
+  </div>
+</div>
+<div class="section" id="about">
+  <div class="container">
+    <div class="card" data-aos="fade-up" data-aos-offset="10">
+      <div class="row">
+        <div class="col-lg-6 col-md-12">
+       <div class="card-body">
+          <div class="h4 mt-0 title">About</div>
+          <p>Hello! I'm Samyam Subedi, a Full Stack Developer specializing in .NET Core and React, with a passion for building scalable, high-performance applications in the finance technology sector.</p>
+          <p>I architect robust backend systems with C# and .NET Core while crafting responsive, real-time user interfaces with React and TypeScript. With hands-on experience in multi-tenant platforms, banking applications, and WebSocket-based real-time communication, I bring a comprehensive approach to full-stack development—balancing security, performance, and exceptional user experience.</p>
         </div>
-        <div class='skill-item'><span class='skill-label'>State Management:</span> Zustand, TanStack Query (React
-            Query), SWR</div>
-        <div class='skill-item'><span class='skill-label'>UI Frameworks:</span> Tailwind CSS, Bootstrap, Kendo UI,
-            jQuery</div>
-        <div class='skill-item'><span class='skill-label'>Form Handling:</span> React Hook Form, Zod (validation)</div>
-        <div class='skill-item'><span class='skill-label'>Animation & Interactivity:</span> Framer Motion</div>
-        <div class='skill-item'><span class='skill-label'>Real-Time Communication:</span> WebSockets</div>
+        </div>
+<div class="col-lg-6 col-md-12">
+  <div class="card-body">
+    <div class="h4 mt-0 title">Basic Information</div>
+    <div class="row">
+      <div class="col-sm-4"><strong class="text-uppercase">Age:</strong></div>
+      <div class="col-sm-8">23</div>
     </div>
-
-    <div class='skill-category'>
-        <div class='skill-category-title'>Database & Performance</div>
-        <div class='skill-item'><span class='skill-label'>Database Systems:</span> MS SQL Server</div>
-        <div class='skill-item'><span class='skill-label'>Skills:</span> Query Optimization, Stored Procedures, Database
-            Migrations, Indexing</div>
-        <div class='skill-item'><span class='skill-label'>ORM:</span> Entity Framework Core</div>
+    <div class="row mt-3">
+      <div class="col-sm-4"><strong class="text-uppercase">Email:</strong></div>
+      <div class="col-sm-8">samyam081@gmail.com</div>
     </div>
-
-    <div class='skill-category'>
-        <div class='skill-category-title'>DevOps & Tools</div>
-        <div class='skill-item'><span class='skill-label'>Version Control:</span> Git, GitHub</div>
-        <div class='skill-item'><span class='skill-label'>Containerization:</span> Docker</div>
-        <div class='skill-item'><span class='skill-label'>Project Management:</span> Jira, Agile/Scrum Methodology</div>
-        <div class='skill-item'><span class='skill-label'>API Documentation:</span> Swagger/OpenAPI</div>
+    <div class="row mt-3">
+      <div class="col-sm-4"><strong class="text-uppercase">Phone:</strong></div>
+      <div class="col-sm-8">+977 9843999347</div>
     </div>
-
-    <!-- Education Section -->
-    <div class='section-header'>Education</div>
-    <div class='education-section'>
-        <div class='education-degree'>B.Sc. CSIT</div>
-        <div class='education-detail'>Patan Multiple Campus, Tribhuvan University</div>
-        <div class='education-detail'>2021 – Present</div>
-        <div class='education-detail'>Expected April 2026</div>
-        <div class='education-status'>(Final Semester)</div>
+    <div class="row mt-3">
+      <div class="col-sm-4"><strong class="text-uppercase">Address:</strong></div>
+      <div class="col-sm-8">Kathmandu, Nepal</div>
     </div>
-
-</body>
-
+    <div class="row mt-3">
+      <div class="col-sm-4"><strong class="text-uppercase">Language:</strong></div>
+      <div class="col-sm-8">English, Nepali</div>
+    </div>
+  </div>
+</div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="section" id="skill">
+  <div class="container">
+    <div class="h4 text-center mb-4 title">Professional Skills</div>
+    <div class="card" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="progress-container progress-primary"><span class="progress-badge">C# / .NET Core</span>
+              <div class="progress">
+                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div><span class="progress-value">90%</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="progress-container progress-primary"><span class="progress-badge">React / TypeScript</span>
+              <div class="progress">
+                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%;"></div><span class="progress-value">85%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="progress-container progress-primary"><span class="progress-badge">SQL Server / EF Core</span>
+              <div class="progress">
+                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%;"></div><span class="progress-value">85%</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="progress-container progress-primary"><span class="progress-badge">REST API Design</span>
+              <div class="progress">
+                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div><span class="progress-value">90%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="progress-container progress-primary"><span class="progress-badge">WebSockets / Real-time Systems</span>
+              <div class="progress">
+                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div><span class="progress-value">80%</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="progress-container progress-primary"><span class="progress-badge">Tailwind CSS / Bootstrap</span>
+              <div class="progress">
+                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%;"></div><span class="progress-value">85%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="progress-container progress-primary"><span class="progress-badge">Git / Docker / Agile</span>
+              <div class="progress">
+                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div><span class="progress-value">80%</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="progress-container progress-primary"><span class="progress-badge">Multi-tenant Architecture</span>
+              <div class="progress">
+                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%;"></div><span class="progress-value">85%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- <div class="section" id="portfolio">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 ml-auto mr-auto">
+        <div class="h4 text-center mb-4 title">Portfolio</div>
+        <div class="nav-align-center">
+          <ul class="nav nav-pills nav-pills-primary" role="tablist">
+            <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#web-development" role="tablist"><i class="fa fa-laptop" aria-hidden="true"></i></a></li>
+            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#graphic-design" role="tablist"><i class="fa fa-picture-o" aria-hidden="true"></i></a></li>
+            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#Photography" role="tablist"><i class="fa fa-camera" aria-hidden="true"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="tab-content gallery mt-5">
+      <div class="tab-pane active" id="web-development">
+        <div class="ml-auto mr-auto">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#web-development">
+                  <figure class="cc-effect"><img src="images/project-1.jpg" alt="Image"/>
+                    <figcaption>
+                      <div class="h4">Recent Project</div>
+                      <p>Web Development</p>
+                    </figcaption>
+                  </figure></a></div>
+              <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#web-development">
+                  <figure class="cc-effect"><img src="images/project-2.jpg" alt="Image"/>
+                    <figcaption>
+                      <div class="h4">Startup Project</div>
+                      <p>Web Development</p>
+                    </figcaption>
+                  </figure></a></div>
+            </div>
+            <div class="col-md-6">
+              <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#web-development">
+                  <figure class="cc-effect"><img src="images/project-3.jpg" alt="Image"/>
+                    <figcaption>
+                      <div class="h4">Food Order Project</div>
+                      <p>Web Development</p>
+                    </figcaption>
+                  </figure></a></div>
+              <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#web-development">
+                  <figure class="cc-effect"><img src="images/project-4.jpg" alt="Image"/>
+                    <figcaption>
+                      <div class="h4">Web Advertising Project</div>
+                      <p>Web Development</p>
+                    </figcaption>
+                  </figure></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane" id="graphic-design" role="tabpanel">
+        <div class="ml-auto mr-auto">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#graphic-design">
+                  <figure class="cc-effect"><img src="images/graphic-design-1.jpg" alt="Image"/>
+                    <figcaption>
+                      <div class="h4">Triangle Pattern</div>
+                      <p>Graphic Design</p>
+                    </figcaption>
+                  </figure></a></div>
+              <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#graphic-design">
+                  <figure class="cc-effect"><img src="images/graphic-design-2.jpg" alt="Image"/>
+                    <figcaption>
+                      <div class="h4">Abstract Umbrella</div>
+                      <p>Graphic Design</p>
+                    </figcaption>
+                  </figure></a></div>
+            </div>
+            <div class="col-md-6">
+              <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#graphic-design">
+                  <figure class="cc-effect"><img src="images/graphic-design-3.jpg" alt="Image"/>
+                    <figcaption>
+                      <div class="h4">Cube Surface Texture</div>
+                      <p>Graphic Design</p>
+                    </figcaption>
+                  </figure></a></div>
+              <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#graphic-design">
+                  <figure class="cc-effect"><img src="images/graphic-design-4.jpg" alt="Image"/>
+                    <figcaption>
+                      <div class="h4">Abstract Line</div>
+                      <p>Graphic Design</p>
+                    </figcaption>
+                  </figure></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane" id="Photography" role="tabpanel">
+        <div class="ml-auto mr-auto">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#Photography">
+                  <figure class="cc-effect"><img src="images/photography-1.jpg" alt="Image"/>
+                    <figcaption>
+                      <div class="h4">Photoshoot</div>
+                      <p>Photography</p>
+                    </figcaption>
+                  </figure></a></div>
+              <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#Photography">
+                  <figure class="cc-effect"><img src="images/photography-3.jpg" alt="Image"/>
+                    <figcaption>
+                      <div class="h4">Wedding Photoshoot</div>
+                      <p>Photography</p>
+                    </figcaption>
+                  </figure></a></div>
+            </div>
+            <div class="col-md-6">
+              <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#Photography">
+                  <figure class="cc-effect"><img src="images/photography-2.jpg" alt="Image"/>
+                    <figcaption>
+                      <div class="h4">Beach Photoshoot</div>
+                      <p>Photography</p>
+                    </figcaption>
+                  </figure></a></div>
+              <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#Photography">
+                  <figure class="cc-effect"><img src="images/photography-4.jpg" alt="Image"/>
+                    <figcaption>
+                      <div class="h4">Nature Photoshoot</div>
+                      <p>Photography</p>
+                    </figcaption>
+                  </figure></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->
+<div class="section" id="experience">
+  <div class="container cc-experience">
+    <div class="h4 text-center mb-4 title">Work Experience</div>
+    <div class="card">
+      <div class="row">
+        <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+          <div class="card-body cc-experience-header">
+            <p>July 2025 - Present</p>
+            <div class="h5">Digital Age Nepal</div>
+          </div>
+        </div>
+        <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+          <div class="card-body">
+            <div class="h5">Full Stack Developer</div>
+            <p>Architecting .NET Core applications for finance technology sector with focus on multi-tenant architecture serving 50+ institutional clients. Building real-time bidirectional communication systems using WebSockets and TypeScript, optimizing SQL queries for high-volume banking operations with 99.9% uptime. Implementing type-safe data validation with Zod schemas and state management using Zustand and TanStack Query, reducing API calls by 60%.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="row">
+        <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+          <div class="card-body cc-experience-header">
+            <p>November 2024 - June 2025</p>
+            <div class="h5">Aster Innovations</div>
+          </div>
+        </div>
+        <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+          <div class="card-body">
+            <div class="h5">Full Stack .NET Developer</div>
+            <p>Developed scalable .NET applications with C#, .NET Core, and SQL Server across 8+ client projects. Architected multi-tenant CMS platform with role-based access control, content versioning, and multilingual support serving 20+ organizations. Designed RESTful APIs with comprehensive documentation enabling seamless integration for React and Blazor applications. Collaborated with UI/UX teams to implement reusable components, reducing development time by 40% while applying Agile/Scrum methodologies.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="section">
+  <div class="container cc-education">
+    <div class="h4 text-center mb-4 title">Education</div>
+    <div class="card">
+      <div class="row">
+        <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+          <div class="card-body cc-education-header">
+            <p>2021 - 2026</p>
+            <div class="h5">Bachelor's Degree</div>
+          </div>
+        </div>
+        <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+          <div class="card-body">
+            <div class="h5">B.Sc. CSIT (Computer Science and Information Technology)</div>
+            <p class="category">Patan Multiple Campus, Tribhuvan University</p>
+            <p>Currently in final semester with expected graduation in April 2026. Comprehensive program covering software development, database systems, web technologies, and computer science fundamentals. Applied theoretical knowledge through practical projects in full-stack development, contributing to real-world applications in the finance technology sector during concurrent professional experience.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- <div class="section" id="reference">
+  <div class="container cc-reference">
+    <div class="h4 mb-4 text-center title">References</div>
+    <div class="card" data-aos="zoom-in">
+      <div class="carousel slide" id="cc-Indicators" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li class="active" data-target="#cc-Indicators" data-slide-to="0"></li>
+          <li data-target="#cc-Indicators" data-slide-to="1"></li>
+          <li data-target="#cc-Indicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-lg-2 col-md-3 cc-reference-header"><img src="images/reference-image-1.jpg" alt="Image"/>
+                <div class="h5 pt-2">Aiyana</div>
+                <p class="category">CEO / WEBM</p>
+              </div>
+              <div class="col-lg-10 col-md-9">
+                <p> Habitasse venenatis commodo tempor eleifend arcu sociis sollicitudin ante pulvinar ad, est porta cras erat ullamcorper volutpat metus duis platea convallis, tortor primis ac quisque etiam luctus nisl nullam fames. Ligula purus suscipit tempus nascetur curabitur donec nam ullamcorper, laoreet nullam mauris dui aptent facilisis neque elementum ac, risus semper felis parturient fringilla rhoncus eleifend.</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-lg-2 col-md-3 cc-reference-header"><img src="images/reference-image-2.jpg" alt="Image"/>
+                <div class="h5 pt-2">Braiden</div>
+                <p class="category">CEO / Creativem</p>
+              </div>
+              <div class="col-lg-10 col-md-9">
+                <p> Habitasse venenatis commodo tempor eleifend arcu sociis sollicitudin ante pulvinar ad, est porta cras erat ullamcorper volutpat metus duis platea convallis, tortor primis ac quisque etiam luctus nisl nullam fames. Ligula purus suscipit tempus nascetur curabitur donec nam ullamcorper, laoreet nullam mauris dui aptent facilisis neque elementum ac, risus semper felis parturient fringilla rhoncus eleifend.</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-lg-2 col-md-3 cc-reference-header"><img src="images/reference-image-3.jpg" alt="Image"/>
+                <div class="h5 pt-2">Alexander</div>
+                <p class="category">CEO / Webnote</p>
+              </div>
+              <div class="col-lg-10 col-md-9">
+                <p> Habitasse venenatis commodo tempor eleifend arcu sociis sollicitudin ante pulvinar ad, est porta cras erat ullamcorper volutpat metus duis platea convallis, tortor primis ac quisque etiam luctus nisl nullam fames. Ligula purus suscipit tempus nascetur curabitur donec nam ullamcorper, laoreet nullam mauris dui aptent facilisis neque elementum ac, risus semper felis parturient fringilla rhoncus eleifend.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->
+<div class="section" id="contact">
+  <div class="cc-contact-information" style="background-image: url('images/staticmap.png')">
+    <div class="container">
+      <div class="cc-contact">
+        <div class="row">
+          <div class="col-md-9">
+            <div class="card mb-0" data-aos="zoom-in">
+              <div class="h4 text-center title">Contact Me</div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="card-body">
+                    <form action="https://formspree.io/f/mbdkyvkg" method="POST">
+                      <div class="p pb-3"><strong>Feel free to contact me </strong></div>
+                      <div class="row mb-3">
+                        <div class="col">
+                          <div class="input-group"><span class="input-group-addon"><i class="fa fa-user-circle"></i></span>
+                            <input class="form-control" type="text" name="name" placeholder="Name" required="required"/>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+                        <div class="col">
+                          <div class="input-group"><span class="input-group-addon"><i class="fa fa-file-text"></i></span>
+                            <input class="form-control" type="text" name="Subject" placeholder="Subject" required="required"/>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+                        <div class="col">
+                          <div class="input-group"><span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                            <input class="form-control" type="email" name="_replyto" placeholder="E-mail" required="required"/>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+                        <div class="col">
+                          <div class="form-group">
+                            <textarea class="form-control" name="message" placeholder="Your Message" required="required"></textarea>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col">
+                          <button class="btn btn-primary" type="submit">Send</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="card-body">
+                    <p class="mb-0"><strong>Address </strong></p>
+                    <p class="pb-2">Kathmandu, Nepal</p>
+                    <p class="mb-0"><strong>Phone</strong></p>
+                    <p class="pb-2">+977 9843999347</p>
+                    <p class="mb-0"><strong>Email</strong></p>
+                    <p>samyam081@gmail.com</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+    </div>
+    <footer class="footer">
+      <div class="container text-center"><a class="cc-facebook btn btn-link" href="#"><i class="fa fa-facebook fa-2x " aria-hidden="true"></i></a><a class="cc-twitter btn btn-link " href="#"><i class="fa fa-twitter fa-2x " aria-hidden="true"></i></a><a class="cc-google-plus btn btn-link" href="#"><i class="fa fa-google-plus fa-2x" aria-hidden="true"></i></a><a class="cc-instagram btn btn-link" href="#"><i class="fa fa-instagram fa-2x " aria-hidden="true"></i></a></div>
+      <div class="h4 title text-center">Samyam Subedi</div>
+      <div class="text-center text-muted">
+        <p>Full Stack Developer (.Net and React)</p>
+      </div>
+    </footer>
+    <script src="js/core/jquery.3.2.1.min.js?ver=1.1.0"></script>
+    <script src="js/core/popper.min.js?ver=1.1.0"></script>
+    <script src="js/core/bootstrap.min.js?ver=1.1.0"></script>
+    <script src="js/now-ui-kit.js?ver=1.1.0"></script>
+    <script src="js/aos.js?ver=1.1.0"></script>
+    <script src="scripts/main.js?ver=1.1.0"></script>
+  </body>
 </html>
