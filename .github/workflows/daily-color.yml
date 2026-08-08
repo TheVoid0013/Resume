@@ -1,10 +1,10 @@
+```yaml
 name: Daily Color Swap
 
-on: 
-  schedule: 
-  - cron: '0 11 * * *' # 3:45 PM Kathmandu time (09:00 UTC) daily 
-  workflow_dispatch: {} # lets you trigger it manually to test
-
+on:
+  schedule:
+    - cron: '45 12 * * *' # 6:30 PM Kathmandu time (12:45 UTC) daily
+  workflow_dispatch: {}
 
 permissions:
   contents: write
@@ -12,6 +12,7 @@ permissions:
 jobs:
   rotate-colors:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
@@ -31,3 +32,4 @@ jobs:
           git add -A
           git diff --cached --quiet || git commit -m "chore: daily color palette update"
           git push
+```
