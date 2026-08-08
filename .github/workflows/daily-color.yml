@@ -2,7 +2,7 @@ name: Daily Color Swap
 
 on: 
   schedule: 
-  - cron: '0 9 * * *' # 3:45 PM Kathmandu time (09:00 UTC) daily 
+  - cron: '0 11 * * *' # 3:45 PM Kathmandu time (09:00 UTC) daily 
   workflow_dispatch: {} # lets you trigger it manually to test
 
 
