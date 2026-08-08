@@ -10,6 +10,15 @@
  * Unused rules are commented out for easy reference
  * Date: February 13, 2026
  */
+:root {
+  --red-wine: #722F37;
+  --bone-white: #F5F0EB;
+  --deep-espresso: #1C1010;
+  --dusty-mauve: #A89080;
+  --dark-merlot: #5C4A4A;
+  --antique-gold: #C9A84C;
+}
+
 
 /* ========================================
    BOOTSTRAP SWITCH - COMMENTED OUT (Not used in portfolio)
@@ -59,8 +68,8 @@
   border-radius: 0.1875rem;
   padding: 11px 22px;
   cursor: pointer;
-  background-color: #5C4A4A;
-  color: #F5F0EB; }
+  background-color: var(--dark-merlot);
+  color: var(--bone-white); }
   .btn:hover, .btn:focus, .btn:active, .btn.active, .btn:active:focus, .btn:active:hover, .btn.active:focus, .btn.active:hover,
   .show > .btn.dropdown-toggle,
   .show > .btn.dropdown-toggle:focus,
@@ -80,7 +89,7 @@
   .show >
   .navbar .navbar-nav > a.btn.dropdown-toggle:hover {
     background-color: #6E5A5A;
-    color: #F5F0EB;
+    color: var(--bone-white);
     box-shadow: none; }
   .btn:hover,
   .navbar .navbar-nav > a.btn:hover {
@@ -122,12 +131,12 @@
   .navbar .navbar-nav > a.btn:active,
   fieldset[disabled]
   .navbar .navbar-nav > a.btn.active {
-    background-color: #5C4A4A;
-    border-color: #5C4A4A; }
+    background-color: var(--dark-merlot);
+    border-color: var(--dark-merlot); }
   .btn.btn-simple,
   .navbar .navbar-nav > a.btn.btn-simple {
-    color: #5C4A4A;
-    border-color: #5C4A4A; }
+    color: var(--dark-merlot);
+    border-color: var(--dark-merlot); }
     .btn.btn-simple:hover, .btn.btn-simple:focus, .btn.btn-simple:active,
     .navbar .navbar-nav > a.btn.btn-simple:hover,
     .navbar .navbar-nav > a.btn.btn-simple:focus,
@@ -138,7 +147,7 @@
       box-shadow: none; }
   .btn.btn-link,
   .navbar .navbar-nav > a.btn.btn-link {
-    color: #5C4A4A; }
+    color: var(--dark-merlot); }
     .btn.btn-link:hover, .btn.btn-link:focus, .btn.btn-link:active,
     .navbar .navbar-nav > a.btn.btn-link:hover,
     .navbar .navbar-nav > a.btn.btn-link:focus,
@@ -211,14 +220,14 @@
 
 /* Primary = Red Wine */
 .btn-primary {
-  background-color: #722F37;
-  color: #F5F0EB; }
+  background-color: var(--red-wine);
+  color: var(--bone-white); }
   .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .btn-primary:active:focus, .btn-primary:active:hover, .btn-primary.active:focus, .btn-primary.active:hover,
   .show > .btn-primary.dropdown-toggle,
   .show > .btn-primary.dropdown-toggle:focus,
   .show > .btn-primary.dropdown-toggle:hover {
     background-color: #8B3A44;
-    color: #F5F0EB;
+    color: var(--bone-white);
     box-shadow: none; }
   .btn-primary:hover {
     box-shadow: 0 3px 8px 0 rgba(28, 16, 16, 0.25); }
@@ -229,18 +238,18 @@
   fieldset[disabled] .btn-primary.focus,
   fieldset[disabled] .btn-primary:active,
   fieldset[disabled] .btn-primary.active {
-    background-color: #722F37;
-    border-color: #722F37; }
+    background-color: var(--red-wine);
+    border-color: var(--red-wine); }
   .btn-primary.btn-simple {
-    color: #722F37;
-    border-color: #722F37; }
+    color: var(--red-wine);
+    border-color: var(--red-wine); }
     .btn-primary.btn-simple:hover, .btn-primary.btn-simple:focus, .btn-primary.btn-simple:active {
       background-color: transparent;
       color: #8B3A44;
       border-color: #8B3A44;
       box-shadow: none; }
   .btn-primary.btn-link {
-    color: #722F37; }
+    color: var(--red-wine); }
     .btn-primary.btn-link:hover, .btn-primary.btn-link:focus, .btn-primary.btn-link:active {
       background-color: transparent;
       color: #8B3A44;
@@ -249,8 +258,8 @@
 
 /* Additional button variants - keeping only what's used */
 .btn-default {
-  background-color: #5C4A4A;
-  color: #F5F0EB; }
+  background-color: var(--dark-merlot);
+  color: var(--bone-white); }
 
 .btn:disabled, .btn[disabled], .btn.disabled {
   opacity: 0.5;
@@ -265,7 +274,7 @@
 
 .btn-simple {
   border: 1px solid;
-  border-color: #5C4A4A;
+  border-color: var(--dark-merlot);
   padding: 10px 22px;
   background-color: transparent; }
 
@@ -310,7 +319,7 @@
   background-color: transparent;
   border: 1px solid #D9CFC8;
   border-radius: 30px;
-  color: #1C1010;
+  color: var(--deep-espresso);
   line-height: normal;
   font-size: 0.8571em;
   transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
@@ -318,21 +327,21 @@
   .has-success .form-control {
     border-color: #D9CFC8; }
   .form-control:focus {
-    border: 1px solid #722F37;
+    border: 1px solid var(--red-wine);
     box-shadow: none;
     outline: 0 !important;
-    color: #1C1010; }
+    color: var(--deep-espresso); }
     .form-control:focus + .input-group-addon,
     .form-control:focus ~ .input-group-addon {
-      border: 1px solid #722F37;
+      border: 1px solid var(--red-wine);
       border-left: none;
       background-color: transparent; }
 
 .input-group-addon {
-  background-color: #F5F0EB;
+  background-color: var(--bone-white);
   border: 1px solid #D9CFC8;
   border-radius: 30px;
-  color: #5C4A4A;
+  color: var(--dark-merlot);
   padding: -0.5rem 0 -0.5rem -0.3rem;
   transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out, background-color 0.3s ease-in-out; }
   .input-group-addon i {
@@ -364,7 +373,7 @@ textarea.form-control {
   .progress-container ~ .progress-container {
     margin-top: 15px; }
   .progress-container .progress-badge {
-    color: #5C4A4A;
+    color: var(--dark-merlot);
     font-size: 0.8571em;
     text-transform: uppercase; }
   .progress-container .progress {
@@ -375,20 +384,20 @@ textarea.form-control {
     margin-top: 14px; }
     .progress-container .progress .progress-bar {
       box-shadow: none;
-      background-color: #5C4A4A; }
+      background-color: var(--dark-merlot); }
     .progress-container .progress .progress-value {
       position: absolute;
       top: 2px;
       right: 0;
-      color: #5C4A4A;
+      color: var(--dark-merlot);
       font-size: 0.8571em; }
   .progress-container.progress-primary .progress {
     background: rgba(114, 47, 55, 0.3); }
   .progress-container.progress-primary .progress-bar {
-    background: #722F37; }
+    background: var(--red-wine); }
   .progress-container.progress-primary .progress-value,
   .progress-container.progress-primary .progress-badge {
-    color: #722F37; }
+    color: var(--red-wine); }
 
 /* ========================================
    BADGES - COMMENTED OUT (Not used)
@@ -428,7 +437,7 @@ small {
   font-size: 60%; }
 
 a {
-  color: #722F37; }
+  color: var(--red-wine); }
   a:hover, a:focus {
     color: #8B3A44; }
 
@@ -480,7 +489,7 @@ p {
   .title.title-up {
     text-transform: uppercase; }
     .title.title-up a {
-      color: #1C1010;
+      color: var(--deep-espresso);
       text-decoration: none; }
   .title + .category {
     margin-top: -25px; }
@@ -488,25 +497,25 @@ p {
 .description,
 .card-description,
 .footer-big p {
-  color: #A89080;
+  color: var(--dusty-mauve);
   font-weight: 300; }
 
 .category {
   text-transform: uppercase;
   font-weight: 700;
-  color: #A89080; }
+  color: var(--dusty-mauve); }
 
 .text-primary {
-  color: #722F37 !important; }
+  color: var(--red-wine) !important; }
 
 .text-white {
-  color: #F5F0EB !important; }
+  color: var(--bone-white) !important; }
 
 .text-center {
   text-align: center; }
 
 .text-muted {
-  color: #A89080; }
+  color: var(--dusty-mauve); }
 
 .text-uppercase {
   text-transform: uppercase; }
@@ -515,16 +524,16 @@ p {
    BODY & MAIN - USED
    ======================================== */
 body {
-  color: #1C1010;
+  color: var(--deep-espresso);
   font-size: 14px;
   font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  background-color: #F5F0EB; }
+  background-color: var(--bone-white); }
 
 .main {
   position: relative;
-  background: #F5F0EB; }
+  background: var(--bone-white); }
 
 /* ========================================
    ANIMATIONS - USED
@@ -549,7 +558,7 @@ body {
   width: 22px;
   height: 1px;
   border-radius: 1px;
-  background: #F5F0EB; }
+  background: var(--bone-white); }
   .button-bar + .button-bar {
     margin-top: 7px; }
   .button-bar:nth-child(2) {
@@ -564,10 +573,10 @@ body {
 .separator {
   height: 2px;
   width: 44px;
-  background-color: #5C4A4A;
+  background-color: var(--dark-merlot);
   margin: 20px auto; }
   .separator.separator-primary {
-    background-color: #722F37; }
+    background-color: var(--red-wine); }
 
 /* ========================================
    NAV PILLS - COMMENTED OUT (Not used)
@@ -603,7 +612,7 @@ body {
   .navbar a {
     vertical-align: middle; }
     .navbar a:not(.btn):not(.dropdown-item) {
-      color: #F5F0EB; }
+      color: var(--bone-white); }
   .navbar p {
     display: inline-block;
     margin: 0;
@@ -639,18 +648,18 @@ body {
   .navbar.navbar-transparent {
     background-color: transparent !important;
     box-shadow: none;
-    color: #F5F0EB;
+    color: var(--bone-white);
     padding-top: 20px; }
   .navbar.bg-white:not(.navbar-transparent) a:not(.dropdown-item) {
-    color: #5C4A4A; }
+    color: var(--dark-merlot); }
 
 /* bg-primary = Red Wine */
 .bg-primary {
-  background-color: #722F37 !important; }
+  background-color: var(--red-wine) !important; }
 
 /* bg-white = Bone White */
 .bg-white {
-  background-color: #F5F0EB !important; }
+  background-color: var(--bone-white) !important; }
 
 /* ========================================
    DROPDOWN - COMMENTED OUT (Not used in simple portfolio)
@@ -754,7 +763,7 @@ img {
   .card .card-body {
     min-height: 190px; }
   .card[data-background-color="orange"] {
-    background-color: #722F37; }
+    background-color: var(--red-wine); }
 
 .card-body {
   padding: 1.25rem; }
@@ -796,7 +805,7 @@ img {
 .section {
   padding: 70px 0;
   position: relative;
-  background: #F5F0EB;
+  background: var(--bone-white);
   padding-bottom: 0; }
   .section .row + .category {
     margin-top: 15px; }
@@ -805,7 +814,7 @@ img {
   height: 100vh;
   max-height: 1050px;
   padding: 0;
-  color: #F5F0EB;
+  color: var(--bone-white);
   position: relative;
   background-position: center center;
   background-size: cover;
@@ -831,7 +840,7 @@ img {
       transform: translate(-50%, -50%);
       text-align: center;
       padding: 0 15px;
-      color: #F5F0EB;
+      color: var(--bone-white);
       width: 100%;
       max-width: 880px; }
   .page-header .category,
@@ -859,7 +868,7 @@ img {
   min-height: 550px; }
 
 .profile-page .profile-container {
-  color: #F5F0EB; }
+  color: var(--bone-white); }
 
 .profile-page .photo-container {
   width: 123px;
@@ -965,7 +974,7 @@ img {
   padding-top: 60px;
   padding-right: 0;
   text-align: center;
-  color: #F5F0EB;
+  color: var(--bone-white);
   text-transform: uppercase; }
 
 /* Education */
@@ -976,7 +985,7 @@ img {
   padding-top: 60px;
   padding-right: 0;
   text-align: center;
-  color: #F5F0EB; }
+  color: var(--bone-white); }
 
 /* Contact Information */
 .cc-contact-information {
@@ -1003,7 +1012,7 @@ img {
 
 .gallery .cc-porfolio-image figure figcaption {
   position: absolute;
-  color: #F5F0EB;
+  color: var(--bone-white);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden; }
 
@@ -1096,7 +1105,7 @@ img {
 .gallery figure.cc-effect:hover button {
   opacity: 1;
   transform: translate3d(0, 0, 0);
-  color: #F5F0EB; }
+  color: var(--bone-white); }
 
 .gallery figure.cc-effect:hover figcaption::after,
 .gallery figure.cc-effect:hover .h4,
@@ -1197,8 +1206,8 @@ img {
     transform: translate3d(300px, 0, 0);
     transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1); }
     .sidebar-collapse .navbar-collapse:before {
-      background: #722F37;
-      background: linear-gradient(#722F37 0%, #1C1010 80%);
+      background: var(--red-wine);
+      background: linear-gradient(var(--red-wine) 0%, var(--deep-espresso) 80%);
       opacity: 0.88;
       filter: alpha(opacity=88);
       display: block;
