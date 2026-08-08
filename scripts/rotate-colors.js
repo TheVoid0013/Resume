@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const CSS_PATH = path.join(__dirname, '..', 'css', 'style.css'); // adjust path
+const CSS_PATH = path.join(__dirname, '..', 'css', 'main.css');
 
 // Add as many palettes as you want — each needs all 6 variables
 const palettes = [
