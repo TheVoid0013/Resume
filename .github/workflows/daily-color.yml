@@ -1,35 +1,26 @@
-
 name: Daily Color Swap
-
 on:
   schedule:
     - cron: '45 12 * * *' # 6:30 PM Kathmandu time (12:45 UTC) daily
   workflow_dispatch: {}
-
 permissions:
   contents: write
-
 jobs:
   rotate-colors:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
-
       - name: Set up Node
         uses: actions/setup-node@v4
         with:
           node-version: 20
-
       - name: Run color rotation script
         run: node scripts/rotate-colors.js
-
       - name: Commit and push if changed
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "TheVoid0013"
+          git config user.email "samyam.subedi07@gmail.com"
           git add -A
           git diff --cached --quiet || git commit -m "chore: daily color palette update"
           git push
-
